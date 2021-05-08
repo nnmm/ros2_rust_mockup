@@ -1,0 +1,12 @@
+[package]
+name = "my_node"
+version = "0.1.0"
+authors = ["nnmm <nnmmgit@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rcl-sys = {path = "../rcl-sys"}
+# Running colcon would update this path, but once it has been updated, cargo can build this alone!
+geometry_msgs = {path = "/home/user/ros2_rust/install/geometry_msgs_rs/share/geometry_msgs_rs/rust"}

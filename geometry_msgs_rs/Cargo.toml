@@ -1,0 +1,16 @@
+[package]
+name = "geometry_msgs"
+version = "0.1.0"
+authors = ["nnmm <nnmmgit@gmail.com>"]
+edition = "2018"
+links = "geometry_msgs__rosidl_typesupport_c"
+build = "build.rs"
+
+[lib]
+name = "geometry_msgs"
+path = "src/lib.rs"
+
+[dependencies]
+
+[build-dependencies]
+bindgen = "0.45.0"
